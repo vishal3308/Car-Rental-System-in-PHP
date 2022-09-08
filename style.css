@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style-type: none;   
+}
+.header{
+  background:radial-gradient(#fff,#ffd6d6);
+}
+.nav{
+    flex: 1;
+    text-align: right;  
+}
+.nav ul{
+  display: inline-block;
+}
+.container{
+    display: flex;
+    padding: 10px 10px 0px 10px;
+}
+.nav ul li{
+    display: inline-block;
+    margin: 8px;
+    padding: 5px 20px;
+    border-radius: 10px;
+  }
+  .nav ul li:hover{
+    background-color: #fff;
+  }
+  .nav ul li a{
+  color: #555;
+}
+#menutoggle img{
+  width: 30px;
+  height: 30px;
+  margin: 5px 5px 5px 10px;
+  display: none;
+}
+
+/* -----------------------main page-------------------------- */
+.logo{
+    margin-left: 30px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#col-2{
+  padding-left: 70px;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    line-height: 40px;
+    padding-left: 20px;
+}
+.col-2 img{
+  width: 100%;
+}
+.col-2 a{
+  color: #555;
+  background-color: #ff523b;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: background-color,0.5s;
+}
+.col-2 a:hover,.col-6 a:hover{
+  background-color: rgb(187, 10, 10);
+  color: #fff;
+}
+/* -------------------Featured Catagory Section------------------ *
+/* ---------------------Featured Product-------------------------- */
+
+
+/* ---------------------moving Name logo----------------- */
+.move{
+  background:url("images/movinglogo.gif");
+  height: 150px;
+  width: 80vw;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* ------------------------------footer------------------- */
+.foot{
+  flex-basis: 20%;
+  padding: 30px 0px 0px 0px;
+  line-height: 25px;
+}
+.foot img{
+  width: 100%;
+}
+.foot .app img{
+   width: 50%;
+}
+.footer{
+  background-color: black;
+ color: #fff;
+ text-align: center;
+
+}
+.foot p,.foot a{
+  font-size: 18px;
+  line-height: 25px;
+  color: #555;
+}
+.footer>p{
+position: relative;
+bottom: 20px;
+}
+#foot1,#foot2{
+  flex-basis: 250px;
+}
+.foot a:hover{
+  color: white;
+}
+
+
+
+/* ------------------------------media querry--------------------- */
+
+@media screen and (min-width:801px){
+.productimg img{
+  height: 450px;
+  width: 400px;
+}
+}
+
+@media screen and (max-width:800px){
+.col-2,.col-4,.col-5{
+  flex-basis: 100%;
+}
+.testimonial .col-3{
+  margin-top: 12px;
+}
+.col-6 p{
+  font-size: 15px;
+}
+.col-6 h1{
+  line-height: 40px;
+  font-weight: 500;
+}
+.nav ul{
+  background:radial-gradient(#fff,#ffd6d6);
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  width: 100%;
+  transition: max-height,0.8s;
+  overflow: hidden;
+}
+.nav ul li{
+  display: block;
+  margin-right: 50px;
+  text-align: initial;
+}
+#menutoggle img{
+  display: block;
+}
+.small-container h4{
+  font-size: 25px;
+}
+}
+
+@media only screen and (max-width:450px){
+ .col-2,.col-3,.col-4,.col-5,.col-6,.foot{
+    flex-basis: 100%;
+ }
+ .footer p,.footer a,.col-6 p{
+   line-height: 30px;
+   font-size: 20px;
+   
+ }
+ * p{
+   font-size: 20px;
+ }
+ #productname{
+   display: none;
+ }
+}
